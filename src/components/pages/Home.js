@@ -64,7 +64,7 @@ function Home(props) {
                 </Row>
             </Container>
             <Jumbotron/>
-            <Container>
+            <Container className="mb-4">
                 <Row>
                     <Col md={7}>
                         <img src={pex3} height={300} alt="pex3"/>

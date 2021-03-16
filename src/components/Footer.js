@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 
 function Footer(props) {
     return (
-        <Container className='mt-4' fluid style={{backgroundColor:'rgba(59,49,54,0.45)', color:'white'}}>
-    <p className='text-center pt-2'>My Footer Bootstrap</p>
+        <Container className='' fluid style={{backgroundColor:'rgba(59,49,54,0.45)', color:'white'}}>
+    <p className='text-center pt-4'>My Footer Bootstrap</p>
 <Container className='d-flex justify-content-center'>
     <div className='mb-4 '>
         <Link className='text-decoration-none' to="/">Home</Link>
