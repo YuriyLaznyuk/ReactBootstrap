@@ -35,6 +35,7 @@ function NaviBar(props) {
                                 <Nav.Link><Link to="/">Home</Link></Nav.Link>
                                 <Nav.Link><Link to="/users">User</Link></Nav.Link>
                                 <Nav.Link><Link to="/about">About</Link></Nav.Link>
+                                <Nav.Link><Link to="/admin">Admin</Link></Nav.Link>
                             </Nav>
                             <div className='d-flex'>
                                 <Button className="mr-2" variant='primary'  onClick={handleShow}>Log In</Button>

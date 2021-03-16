@@ -7,6 +7,9 @@ import Home from "./components/pages/Home"
 import About from "./components/pages/About";
 import Users from "./components/pages/Users";
 import Footer from "./components/Footer";
+import Admin from "./components/pages/Admin";
+import PrivateRoute from "./components/pages/redirectComponent/PrivateRoute";
+import AdminLogin from "./components/pages/redirectComponent/AdminLogin";
 
 
 function App(props) {
@@ -19,6 +22,8 @@ function App(props) {
                     <Route exact path="/"><Home/></Route>
                     <Route path="/about"><About/></Route>
                     <Route path="/users"><Users/></Route>
+                    <Route path="/adminLogin"><AdminLogin/></Route>
+                    <PrivateRoute patch="/admin" component={Admin}/>
                 </Switch>
 
                 <Footer/>
