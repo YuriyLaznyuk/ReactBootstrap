@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from "./componentPage/Slider";
 import {Container, Row, Col, Card, Button} from "react-bootstrap";
-import pex1 from "../pages/photo/pex1.jpg"
-import pex2 from "../pages/photo/pex2.jpg"
-import pex3 from "../pages/photo/pex3.jpg"
+import pex1 from "../pages/photo/pex1.jpg";
+import pex2 from "../pages/photo/pex2.jpg";
+import pex3 from "../pages/photo/pex3.jpg";
 import {Jumbotron} from "../Jumbotron";
 
 function Home(props) {

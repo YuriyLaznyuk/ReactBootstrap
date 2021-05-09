@@ -3,7 +3,7 @@ import {Jumbotron} from "../Jumbotron";
 
 function About(props) {
     return (
-        <div >
+        <div>
             <Jumbotron/>
             <Jumbotron/>
             <Jumbotron/>

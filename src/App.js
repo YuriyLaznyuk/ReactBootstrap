@@ -1,16 +1,14 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import {Button} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NaviBar from "./components/NaviBar";
-import {Switch, Route, BrowserRouter} from "react-router-dom"
-import Home from "./components/pages/Home"
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Users from "./components/pages/Users";
 import Footer from "./components/Footer";
 import Admin from "./components/pages/Admin";
 import PrivateRoute from "./components/pages/redirectComponent/PrivateRoute";
 import AdminLogin from "./components/pages/redirectComponent/AdminLogin";
-
 
 function App(props) {
     return (

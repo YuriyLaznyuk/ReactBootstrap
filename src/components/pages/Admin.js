@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Button} from "react-bootstrap";
+import {Container, Button} from "react-bootstrap";
 import Slider from "./componentPage/Slider";
 
 function Admin(props) {
@@ -7,7 +7,7 @@ function Admin(props) {
         <div>
             <h1 className='text-center'>
                 Admin panel control
-                    <Slider/>
+                <Slider/>
                 <Container className='justify-content-between d-flex'>
                     <Button className='d-block' variant='danger'>Shoot</Button>
                     <Button className='d-block' variant='warning'>Alarm</Button>

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {Redirect, useLocation} from 'react-router-dom'
-import {Button, Form, Container} from 'react-bootstrap'
-import styled from "styled-components"
+import {Redirect, useLocation} from 'react-router-dom';
+import {Button, Form} from 'react-bootstrap';
+import styled from "styled-components";
 
 const ComponentLogin = styled.div`
     height: 350px;
@@ -9,7 +9,7 @@ const ComponentLogin = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`
+`;
 
 function AdminLogin(props) {
     const {state} = useLocation();
@@ -22,19 +22,19 @@ function AdminLogin(props) {
         fakeAuth.authenticate(() => {
             validPassword ?
                 setRedirectToRefBool(true)
-                : setRedirectToRefBool(false)
+                : setRedirectToRefBool(false);
 
-        })
+        });
     }
 
     // validPassword
 
     useEffect(() => {
-        setValidPassword(/^admin$/.test(password))
-    })
+        setValidPassword(/^admin$/.test(password));
+    }, [password]);
 
     if (redirectToRefBool) {
-        return <Redirect to={from}/>
+        return <Redirect to={from}/>;
     }
     return (
         <ComponentLogin>
@@ -61,7 +61,7 @@ export const fakeAuth = {
     isAuthenticated: false,
     authenticate(func) {
         this.isAuthenticated = true;
-        setTimeout(func, 100)
+        setTimeout(func, 100);
     }
 
-}
+};
