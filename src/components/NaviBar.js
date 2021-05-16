@@ -45,7 +45,7 @@ function NaviBar(props) {
                                 <Button className="mr-2" variant='primary' onClick={handleShow}>Log In</Button>
                                 <Button className="" variant='primary' onClick={handleShow}>Sign out</Button>
                             </div>
-                        </Navbar.Collapse>
+                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
 
